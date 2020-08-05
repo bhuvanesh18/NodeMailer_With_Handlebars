@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>NodeMailer</title>
+</head>
+<body class="container mx-auto my-5 col-6 text-center">
+    <h1>Node Mailer App</h1>
+    <h4 class="bg-info px-4 py-2 rounded shadow text-light my-4">{{message}}</h4>
+    <form method="POST" action="send">
+        <div class="form-group">
+            <label for="recieverEmailId">Email address:</label>
+            <input type="email" class="form-control" id="recieverEmailId" name="email" required="true">
+        </div>
+        <div class="form-group">
+            <label for="subject">Enter subject:</label>
+            <input type="text" class="form-control" id="subject" name="subject" required="true">
+        </div>
+        <div class="form-group">
+            <label for="text">Enter mail text:</label>
+            <input type="text" class="form-control" id="text" name="text" required="true">
+        </div>
+        <button type="submit" class="btn btn-primary">Send Email</button>
+    </form>
+</body>
+</html>
